@@ -1,0 +1,81 @@
+@media only screen and (max-width:1130px){.right-plan-price-outer .custom-checkbox.checkbox label small {display: inline-block;margin-top: 10px;text-align: right;width: 100%;}.right-plan-price-outer .checkbox label::after, .right-plan-price-outer .checkbox label::before{ margin-left:28px;}.satisfaction-gaur-badge{max-width:100px;}.footer-logo{margin-left:0}.right-footer{width:100%}.right-footer ul li{padding:0 10px}.heading-one h2{font-size:25px}}@media only screen and (max-width:1024px){.custom-checkbox.checkbox.checkbox-color label b{font-size:15px}.right-plan-price-outer .custom-checkbox.checkbox label small{margin-top:15px;}.right-plan-price-outer .checkbox label::after, .right-plan-price-outer .checkbox label::before{margin-left:6px;}.money-back h3{font-size:16px;}.receive-order h3{font-size:18px;line-height:1.3;}.main-right-col h3 span::after{display:none}.footer,.right-footer{text-align:center}.left-footer,.right-footer{display:inline-block;float:none;width:100%}.footer-logo img{float:none}.right-footer{margin-top:10px}.right-plan-list ul li{font-size:16px}
+.custom-checkbox.checkbox.checkbox-color.deal img {
+  left: -18px;
+}
+}
+@media screen and (max-width: 991px){
+.price-outer .cut-price {
+  font-size:16px;
+  right:-4px;
+}
+.payment-method-outer ul li img {
+  height: 33px;
+  min-width: 53px;
+}
+.payment-method-outer ul li {
+  width: 10%;
+}
+.right-plan-price-outer .custom-checkbox.checkbox label span {
+  font-size: 27px;
+}
+.custom-checkbox.checkbox.checkbox-color.deal img {
+  left: -12px;
+  top: 108px;
+}
+.main-left-col .price-outer .cut-price {
+  top: 75%;
+  font-size:14px;
+}
+.alignleft {
+  width: 125px;
+}
+}
+@media only screen and (max-width:800px){.right-plan-price-outer{width:43%;}.right-plan-img-price-outer figure{width:54%;}.right-plan-price-outer .checkbox label::after, .right-plan-price-outer .checkbox label::before{margin-left:110px;}.right-plan-img-section{padding-bottom:65px;}.booster-bottom-new-text{display:none;}.booster-bottom-new-text, .money-back, .receive-order{text-align:center;}.alignright, .alignleft {display:inline-block;float:none;padding:0;}.receive-order{width:100%;}.header{text-align:center}.main-left-col,.main-right-col{width:100%;padding:0}.step-one-outer{margin-top:20px}
+.right-plan-img-section .right-plan-price-outer .checkbox label::after, .right-plan-img-section .right-plan-price-outer .checkbox label::before {
+  margin-left: 5%;
+}
+.custom-checkbox.checkbox.checkbox-color label b {
+  padding-left: 20%;
+}
+.right-plan-price-outer .custom-checkbox.checkbox label span {
+  padding-left: 20%;
+}
+.right-plan-img-price-outer figure {
+  margin-top: 15px;
+}
+.main-left-col .submit-ourder-btn > span {
+  float: left;
+  width: 100%;
+}
+.price-outer .cut-price {
+  top: 65%;
+}
+.main-left-col, .main-right-col {
+  padding: 15px;
+}
+}@media only screen and (max-width:767px){.custom-checkbox.checkbox.checkbox-color label b, .right-plan-price-outer .custom-checkbox.checkbox label small, .right-plan-price-outer .custom-checkbox.checkbox label span, .right-plan-price-outer p{text-align:left;}.right-plan-price-outer .checkbox label::after, .right-plan-price-outer .checkbox label::before{ margin-left: 0;}.right-plan-price-outer{padding-left:0px;}.right-plan-price-outer{position:relative;}.cansel-anytime-text{left:0px; right:auto;}.claim-your-order-strip{display:none;}.right-plan-img-price-outer figure, .right-plan-price-outer{ width:100%; margin-left:0px;}.right-plan-price-outer{padding-left:0px;}.satisfaction-gaur-badge{display:block;}.right-plan-img-section{padding-bottom:0px;}.aviable-now-call,.logo{width:100%;text-align:center;}.heading-one h2,.main-right-col h3{font-size:20px}.right-plan-list ul li,input.custom-input,select.custom-input,textarea.custom-input{}.select-wrapper .holder{font-size:15px}
+.right-plan-img-section .right-plan-price-outer .checkbox label::after, .right-plan-img-section .right-plan-price-outer .checkbox label::before {
+  margin-left: 0;
+}
+.custom-checkbox.checkbox.checkbox-color label b {
+  padding-left: 50px;
+}
+.right-plan-price-outer .custom-checkbox.checkbox label span {
+  padding-left:50px;
+}
+.right-plan-img-price-outer figure span {
+  width: 100%;
+}
+.cansel-anytime-text {
+  left: 40%;
+}
+.right-plan-img-section img {
+  max-height: 320px;
+}
+}@media only screen and (max-width:599px){.right-plan-img-section{margin-top:0px;padding-top:50px;}}@media only screen and (max-width:480px){.satisfaction-gaur-badge{left:0px;}.payment-method-outer ul li + li{margin-left:5px;}.payment-method-outer ul li{width:18%;}.payment-method-outer ul li img{height:auto;min-width:100%;}.price-outer h3{font-size:70px}.price-outer h3 sup{font-size:25px}.cut-price{font-size:18px;line-height:28px;margin-bottom:10px;position:inherit;text-align:center;top:0}.right-plan-list-img-section,.right-plan-list-text-section{display:inline-block;text-align:center;width:100%}}@media only screen and (max-width:479px){.satisfaction-gaur-badge img{max-width:50px;}.right-plan-img-section{padding-top:30px}
+.custom-checkbox.checkbox.checkbox-color.vip4-click > label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+}
+

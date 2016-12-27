@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link type="text/css" href="css/kprofile.css" rel="stylesheet">
+<link type="text/css" href="css/kform.css" rel="stylesheet">
+<link type="text/css" href="css/kcart.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/kvalidator.js"></script>
+<script type="text/javascript" src="js/klander.js"></script>
+<script type="text/javascript" src="js/kcart.js"></script>
+
+
+<script type="text/javascript">  
+window.addEventListener('load',function()
+{
+	kform = new klander;
+	kform.disableBack = false;
+	kform.requirePayInfo = false;
+	kform.autoImportLead = true;
+	kform.config = {"isWordpress":false,"resourceDir":"resources\/","baseDir":null,"mobileRedirectUrl":null,"desktopRedirectUrl":null,"continents":{"AU":"AU","CA":"NA","GB":"EU","NZ":"AU","US":"NA","ZA":"AF"},"countries":{"US":"United States","AU":"Australia","CA":"Canada","NZ":"New Zealand","ZA":"South Africa","GB":"United Kingdom"},"coupons":{"FITNESS":{"couponDiscountPrice":"10.00","couponDiscountPerc":null,"applyTo":"BASE_PRICE","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":null,"couponMax":1},"REPEATCUSTOMER":{"couponDiscountPrice":"13.00","couponDiscountPerc":null,"applyTo":"BASE_PRICE","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":null,"couponMax":1},"WORKOUT":{"couponDiscountPrice":"11.00","couponDiscountPerc":null,"applyTo":"BASE_PRICE","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":null,"couponMax":1},"NEWYEAR16":{"couponDiscountPrice":"20.00","couponDiscountPerc":null,"applyTo":"BASE_PRICE","isRecurring":0,"recurringDiscountPrice":null,"recurringDiscountPerc":null,"maxCycles":null,"campaignProductId":null,"couponMax":1}},"currencySymbol":"$","insureShipPrice":null,"landerType":"MULTI","offers":{"79":{"productId":79,"name":"SUBSCRIBE & SAVE Monthly","description":"Monthly Subscription Discount Pricing","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"39.99","shipPrice":"0.00","category":"Offer-checkout-Vip-4"},"80":{"productId":80,"name":"ONE TIME PURCHASE","description":"*No description available","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"49.99","shipPrice":"0.00","category":"Offer-checkout-Vip-4"},"81":{"productId":81,"name":"ORDER 3 BOTTLES","description":"*No description available","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"135.00","shipPrice":"0.00","category":"Offer-checkout-Vip-4"},"82":{"productId":82,"name":"ORDER 6 BOTTLES","description":"*No description available","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"198.00","shipPrice":"0.00","category":"Offer-checkout-Vip-4"}},"upsells":{"83":{"productId":83,"name":"Testosterone Booster","description":"Test booster","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"39.00","shipPrice":"0.00","category":"Testosterone"},"84":{"productId":84,"name":"Daily Cleanse","description":"*No description available","imagePath":"\/\/images.konnektive.com\/unavailable.png","imageId":null,"price":"39.00","shipPrice":"0.00","category":"Daily Cleanse"},"85":{"productId":85,"name":"Nitrocut - 3 Month Supply","description":"Workout Supplement (But 2 Get 1) 3 Month Supply","imagePath":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/resources\/images\/products\/product85.png","imageId":null,"price":"87.00","shipPrice":"0.00","category":"Nitrocut"}},"products":[],"shipProfiles":{"9":{"shipProfileId":9,"freeShipThreshold":null,"profileName":" International","isUpcharge":0,"defaultShipping":0,"applyEntireOrder":0,"highestShipPriceOnly":0,"shipCarrier":null,"shipMethod":null,"rules":[{"ruleId":21,"shipProfileId":9,"shipCarrier":null,"shipMethod":null,"profileName":" International","applyEntireOrder":0,"productTypeSelect":"PRODUCTS","campaignProductId":null,"productCategoryId":null,"shipPrice":"0.00","shipCost":"0.00","region":"US","state":null,"currencySymbol":"$","categoryName":null,"productName":null,"countryName":"United States","campaignId":23},{"ruleId":22,"shipProfileId":9,"shipCarrier":null,"shipMethod":null,"profileName":" International","applyEntireOrder":0,"productTypeSelect":"SINGLE","campaignProductId":80,"productCategoryId":null,"shipPrice":"10.99","shipCost":"0.00","region":null,"state":null,"currencySymbol":"$","categoryName":null,"productName":"ONE TIME PURCHASE","countryName":null,"campaignId":23},{"ruleId":23,"shipProfileId":9,"shipCarrier":null,"shipMethod":null,"profileName":" International","applyEntireOrder":0,"productTypeSelect":"SINGLE","campaignProductId":81,"productCategoryId":null,"shipPrice":"18.99","shipCost":"0.00","region":null,"state":null,"currencySymbol":"$","categoryName":null,"productName":"ORDER 3 BOTTLES","countryName":null,"campaignId":23},{"ruleId":24,"shipProfileId":9,"shipCarrier":null,"shipMethod":null,"profileName":" International","applyEntireOrder":0,"productTypeSelect":"SINGLE","campaignProductId":82,"productCategoryId":null,"shipPrice":"30.99","shipCost":"0.00","region":null,"state":null,"currencySymbol":"$","categoryName":null,"productName":"ORDER 6 BOTTLES","countryName":null,"campaignId":23},{"ruleId":25,"shipProfileId":9,"shipCarrier":null,"shipMethod":null,"profileName":" International","applyEntireOrder":0,"productTypeSelect":"SINGLE","campaignProductId":79,"productCategoryId":null,"shipPrice":"10.99","shipCost":"0.00","region":null,"state":null,"currencySymbol":"$","categoryName":null,"productName":"SUBSCRIBE & SAVE Monthly","countryName":null,"campaignId":23}]}},"states":{"GB":{"ABE":"Aberdeen City","ABD":"Aberdeenshire","ANS":"Angus","ANT":"Antrim","ARD":"Ards","AGB":"Argyll and Bute","ARM":"Armagh","BLA":"Ballymena","BLY":"Ballymoney","BNB":"Banbridge","BDG":"Barking and Dagenham","BNE":"Barnet","BNS":"Barnsley","BAS":"Bath and North East Somerset","BBO":"Bedford Borough","BDF":"Bedfordshire","BFS":"Belfast","BEX":"Bexley","BIR":"Birmingham","BBD":"Blackburn with Darwen","BPL":"Blackpool","BGW":"Blaenau Gwent","BOL":"Bolton","BMH":"Bournemouth","BRC":"Bracknell Forest","BRD":"Bradford","BEN":"Brent","BGE":"Bridgend","BNH":"Brighton and Hove","BST":"Bristol, City of","BRY":"Bromley","BUC":"Buckingham","BKM":"Buckinghamshire","BUR":"Bury","CAY":"Caerphilly","CLD":"Calderdale","CAM":"Cambridgeshire","CMD":"Camden","CRF":"Cardiff","CMN":"Carmarthenshire","CKF":"Carrickfergus","CSR":"Castlereagh","CGN":"Ceredigion","CHS":"Cheshire","CHE":"Cheshire East","CWC":"Cheshire West and Chester","CLK":"Clackmannanshire","CLR":"Coleraine","CWY":"Conwy","CKT":"Cookstown","CON":"Cornwall","COV":"Coventry","CGV":"Craigavon","CRY":"Croydon","CMA":"Cumbria","DAL":"Darlington","DEN":"DenbighshireD","DER":"Derby","DBY":"Derbyshire","DRY":"Derry","DEV":"Devon","DNC":"Doncaster","DOR":"Dorset","DOW":"Down","DUD":"Dudley","DGY":"Dumfries and Galloway","DND":"Dundee City","DGN":"Dungannon","DUR":"Durham","EAL":"Ealing","EAY":"East Ayrshire","EDU":"East Dunbartonshire","ELN":"East Lothian","ERW":"East Renfrewshire","ERY":"East Riding of Yorkshire","ESX":"East Sussex","EDH":"Edinburgh, City of","ELS":"Eilean Siar","ENF":"Enfield","ESS":"Essex","FAL":"Falkirk","FER":"Fermanagh","FIF":"Fife","FLN":"Flintshire","GAT":"Gateshead","GLG":"Glasgow City","GLS":"Gloucestershire","GLO":"Greater London","GRE":"Greenwich","GGY":"Guernsey","GWN":"Gwynedd","HCK":"Hackney","HAL":"Halton","HMF":"Hammersmith and Fulham","HAM":"Hampshire","HRY":"Haringey","HRW":"Harrow","HPL":"Hartlepool","HAV":"Havering","HEF":"Herefordshire, County of","HTF":"Hertfordshire","HRT":"Hertfordshire","HLD":"Highland","HIL":"Hillingdon","HNS":"Hounslow","IVC":"Inverclyde","AGY":"Isle of Anglesey","IOM":"Isle of Man","IOW":"Isle of Wight","IOS":"Isles of Scilly","ISL":"Islington","JEY":"Jersey","KEC":"Kensington and Chelsea","KEN":"Kent","KHL":"Kingston upon Hull, City of","KTT":"Kingston upon Thames","KIR":"Kirklees","KWL":"Knowsley","LBH":"Lambeth","LAN":"Lancashire","LRN":"Larne","LDS":"Leeds","LCE":"Leicester","LEC":"Leicestershire","LEW":"Lewisham","LMV":"Limavady","LIN":"Lincolnshire","LSB":"Lisburn","LIV":"Liverpool","LND":"London, City of","LUT":"Luton","MFT":"Magherafelt","MAN":"Manchester","MDW":"Medway","MTY":"Merthyr Tydfil","MRT":"Merton","MDB":"Middlesbrough","MLN":"Midlothian","MIK":"Milton Keynes","MON":"Monmouthshire","MRY":"Moray","MYL":"Moyle","NTL":"Neath Port Talbot","NET":"Newcastle upon Tyne","NWM":"Newham","NWP":"Newport","NYM":"Newry and Mourne","NTA":"Newtownabbey","NFK":"Norfolk","NAY":"North Ayrshire","NDN":"North Down","NEL":"North East Lincolnshire","NLK":"North Lanarkshire","NLN":"North Lincolnshire","NSM":"North Somerset","NTY":"North Tyneside","NYK":"North Yorkshire","NTH":"Northamptonshire","NBL":"Northumberland","NGM":"Nottingham","NTT":"Nottinghamshire","OLD":"Oldham","OMH":"Omagh","ORK":"Orkney Islands","OXF":"Oxfordshire","PEM":"Pembrokeshire","PKN":"Perth and Kinross","PTE":"Peterborough","PLY":"Plymouth","POL":"Poole","POR":"Portsmouth","POW":"Powys","RDG":"Reading","RDB":"Redbridge","RCC":"Redcar and Cleveland","RFW":"Renfrewshire","RCT":"Rhondda, Cynon, Ta","RIC":"Richmond upon Thames","RCH":"Rochdale","ROT":"Rotherham","RUT":"Rutland","SLF":"Salford","SAW":"Sandwell","SCB":"Scottish Borders, The","SFT":"Sefton","SHF":"Sheffield","ZET":"Shetland Islands","SHR":"Shropshire","SLG":"Slough","SOL":"Solihull","SOM":"Somerset","SAY":"South Ayrshire","SGC":"South Gloucestershire","SLK":"South Lanarkshire","STY":"South Tyneside","SYK":"South Yorkshire","STH":"Southampton","SOS":"Southend-on-Sea","SWK":"Southwark","SHN":"St. Helens","STS":"Staffordshire","STG":"Stirling","SKP":"Stockport","STT":"Stockton-on-Tees","STE":"Stoke-on-Trent","STB":"Strabane","SFK":"Suffolk","SND":"Sunderland","SRY":"Surrey","STN":"Sutton","SWA":"Swansea","SWD":"Swindon","TAM":"Tameside","TFW":"Telford and Wrekin","THR":"Thurrock","TOB":"Torbay","TOF":"Torfaen","TWH":"Tower Hamlets","TRF":"Trafford","VGL":"Vale of Glamorgan, T","WKF":"Wakefield","WLL":"Walsall","WFT":"Waltham Forest","WND":"Wandsworth","WRT":"Warrington","WAR":"Warwickshire","WBK":"West Berkshire","WDU":"West Dunbartonshire","WLN":"West Lothian","WMD":"West Midlands","WSX":"West Sussex","WYK":"West Yorkshire","WSM":"Westminster","WGN":"Wigan","WIL":"Wiltshire","WNM":"Windsor and Maidenhead","WRL":"Wirral","WOK":"Wokingham","WLV":"Wolverhampton","WOC":"Worcester","WOR":"Worcestershire","WRX":"Wrexham","YOR":"York"},"CA":{"AB":"Alberta","BC":"British Columbia","MB":"Manitoba","NB":"New Brunswick","NL":"Newfoundland and Labrador","NT":"Northwest Territories","NS":"Nova Scotia","NU":"Nunavut","ON":"Ontario","PE":"Prince Edward Island","QC":"Quebec","SK":"Saskatchewan","YT":"Yukon"},"NZ":{"AUK":"Auckland","BOP":"Bay of Plenty","CAN":"Canterbury","CIT":"Chatham Islands Territory","GIS":"Gisborne District","HKB":"Hawkes's Bay","MWT":"Manawatu-Wanganui","MBH":"Marlborough District","NSN":"Nelson City","N":"North Island","NTL":"Northland","OTA":"Otago","S":"South Island","STL":"Southland","TKI":"Taranaki","TAS":"Tasman District","WKO":"Waikato","WGN":"Wellington","WTC":"West Coast"},"AU":{"ACT":"Australian Capital Territory","NSW":"New South Wales","NT":"Northern Territory","QLD":"Queensland","SA":"South Australia","TAS":"Tasmania","VIC":"Victoria","WA":"Western Australia"},"ZA":{"EC":"Eastern Cape","FS":"Free State","GT":"Gauteng","NL":"Kwazulu-Natal","LP":"Limpopo","MP":"Mpumalanga","NW":"North-West","NC":"Northern Cape","WC":"Western Cape"},"US":{"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkansas","CA":"California","CO":"Colorado","CT":"Connecticut","DE":"Delaware","DC":"District of Columbia","FL":"Florida","GA":"Georgia","HI":"Hawaii","ID":"Idaho","IL":"Illinois","IN":"Indiana","IA":"Iowa","KS":"Kansas","KY":"Kentucky","LA":"Louisiana","ME":"Maine","MD":"Maryland","MA":"Massachusetts","MI":"Michigan","MN":"Minnesota","MS":"Mississippi","MO":"Missouri","MT":"Montana","NE":"Nebraska","NV":"Nevada","NH":"New Hampshire","NJ":"New Jersey","NM":"New Mexico","NY":"New York","NC":"North Carolina","ND":"North Dakota","OH":"Ohio","OK":"Oklahoma","OR":"Oregon","PA":"Pennsylvania","RI":"Rhode Island","SC":"South Carolina","SD":"South Dakota","TN":"Tennessee","TX":"Texas","UT":"Utah","VT":"Vermont","VA":"Virginia","WA":"Washington","WV":"West Virginia","WI":"Wisconsin","WY":"Wyoming","AS":"American Samoa","FM":"Federated States of Micronesia","GU":"Guam","MP":"Northern Mariana Islands","PR":"Puerto Rico","MH":"Republic of Marshall Islands","VI":"Virgin Islands of the U.S.","AE":"Armed Forces Middle East","AA":"Armed Forces Americas","AP":"Armed Forces Pacific"}},"taxes":null,"webPages":{"checkoutPage":{"disableBack":0,"url":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/index.php","autoImportLead":1,"productId":80},"thankyouPage":{"disableBack":1,"url":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/thankyou.php","createAccountDialog":0,"reorderUrl":"https:\/\/www.nitrocut.com","allowReorder":1},"upsellPage1":{"disableBack":1,"url":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/deal1.php","createAccountDialog":0,"requirePayInfo":0,"productId":83,"replaceProductId":null},"upsellPage2":{"disableBack":1,"url":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/deal2.php","createAccountDialog":0,"requirePayInfo":0,"productId":84,"replaceProductId":null},"upsellPage3":{"disableBack":1,"url":"https:\/\/www.nitrocut.com\/offer-checkout-vip-4\/deal3.php","createAccountDialog":0,"requirePayInfo":0,"productId":85,"replaceProductId":null}},"authString":"a2d86120850ef044e4e0ec190070fba7","autoUpdate_allowedIps":[""],"campaignId":23,"shipOptions":{"9":{"campaignId":23,"shipProfileId":9,"shipMethod":null,"shipCarrier":null}},"googleTrackingId":null,"enableFraudPlugin":0,"companyName":"nitrocut","paypal":{"paypalBillerId":3}};
+	kform.defaultProduct = 80;
+	kform.isShoppingCart = false;
+	kform.displayPixels = true;
+	kform.reorderURL = '';
+	kform.redirectsTo = 'https://www.nitrocut.com/offer-checkout-vip-4/deal1.php';
+	kform.resourceDir = 'resources/';
+	kform.upsellId = null;
+	kform.orderItems = {};
+	kform.customer = null;
+	kform.replaceProductId = null;
+	kform.checkoutPageUrl = 'https://www.nitrocut.com/offer-checkout-vip-4/index.php';
+	kform.signInEmail = '';
+    kform.construct("checkoutPage");
+
+	
+});
+
+</script>
+		<meta charset="utf-8">
+<title>Checkout</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex,nofollow,noodp">
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+<div class="logo"> <a href="index.html"><img src="images/logo-black-head.png" alt=""></a> </div>
+<div class="aviable-now-call">Customer Service <span>1-888-666-7715</span></div>
+</header>
+<section class="main-content-outer">
+<div class="nitro-result">
+<div class="product-feed">
+	<img src="images/nitrocut-add1.jpg" alt="">
+</div>
+<div class="product-feed">
+	<img src="images/nitrocut-add2.jpg" alt="">
+</div>
+</div>
+<div class="main-right-col">
+<h3>Strength * Muscle * Lean * All in One <br> Get Your <span>Nitrocut</span> Today</h3>
+<div class="right-plan-img-section">
+<div class="right-plan-img-price-outer">
+<figure><span>Choose Your Package</span><img src="images/nitrocut-left-product.jpg" alt=""></figure>
+<div class="right-plan-price-outer">
+	<div class="custom-checkbox checkbox checkbox-color kform_productBox">
+								
+							
+						
+<input type="checkbox" productid="79" class="PriceCheckbox kform_productSelect" value="39" id="singleCheckboxp1" aria-label="Single checkbox Two">
+<label for="singleCheckboxp1"><b>Subscribe & Save</b> <br><small>30% VIP subscription saving. Cancel anytime<i>i</i></small><span>$39.99</span></label>
+</div>
+<div class="cansel-anytime-text kform_productBox">
+	<strong>Here's How It Works:</strong>
+    <p>-This product will be delivered to your door every 30 days</p>
+    <p>-No obligation, modify or cancel anytime</p>
+</div>
+<div class="custom-checkbox checkbox checkbox-color kform_productBox">
+
+<input type="checkbox" productid="80" class="PriceCheckbox kform_productSelect" id="singleCheckboxp2" checked value="49.00" aria-label="Single checkbox Two">
+<label for="singleCheckboxp2"><b>One Time Purchase</b> <br><span>$49.99</span></label>
+</div>
+
+<div class="custom-checkbox checkbox checkbox-color deal kform_productBox">
+<input type="checkbox" productid="81" class="PriceCheckbox kform_productSelect" id="singleCheckboxp3" value="135.00" aria-label="Single checkbox Two">
+<label for="singleCheckboxp3"><b>Order 3 Bottles</b> <br><span>$135.00<sub>($45.00 each)</sub></span></label>
+<p></p>
+<img src="images/bestdeal.png">
+</div>
+
+<div class="custom-checkbox checkbox checkbox-color kform_productBox">
+<input type="checkbox" productid="82" class="PriceCheckbox kform_productSelect" id="singleCheckboxp4" value="$198.00" aria-label="Single checkbox Two">
+<label for="singleCheckboxp4"><b>Order 6 Bottles</b> <br><span>$198.00<sub>($33.00 each)</sub></span></label>
+</div>
+
+<p>(Free Shipping on US orders)</p>
+</div>
+</div>
+<figure class="satisfaction-gaur-badge"><img src="images/satisfaction-guart.png" alt=""></figure>
+<figure class="claim-your-order-strip"><img src="images/claim-your-arrow.png" alt=""></figure>
+</div>
+<div class="booster-bottom-new-text">
+<div class="money-back"> <img class="alignleft" alt="" src="images/moneyback_label-1.png">
+<div class="guarantee_dicrip"><h3>90-Day Money-Back Guarantee</h3>
+<p>We are confident that Nitrocut with work for you! We believe in 100% customer satisfaction. Simply try for 90 days and if you're not happy, return for a full refund with absolutely no hassle. </p>
+</div>
+</div>
+<div class="receive-order">
+<h3>How soon will you receive your order?</h3>
+<img class="alignright" alt="" src="images/ups.png">
+<p>All orders Monday-Friday are shipped within 1 business day. Weekend orders are shipped first thing on Monday.<br>
+USPS in USA : 3 - 8 business days<br>International: 10-21 business days</p>
+</div>
+</div>
+</div>
+<div class="main-left-col">
+<div class="step-one-outer">
+<div class="heading-one">
+<h2><strong>Step 1:</strong> Contact & Shipping Information</h2>
+</div>
+
+<form id="kform" class="kform">
+<div class="input-outer">
+<input class="custom-input" name="firstName" type="TEXT" placeholder="First Name" isrequired="">
+</div>
+<div class="input-outer">
+<input class="custom-input" name="lastName" type="TEXT" placeholder="Last Name" isrequired="">
+</div>
+<div class="input-outer">
+<input class="custom-input" name="phoneNumber" type="TEXT" placeholder="Phone Number" isrequired="">
+</div>
+<div class="input-outer">
+<input class="custom-input" name="emailAddress" type="TEXT" placeholder="Email Address" isrequired="">
+</div>
+<div class="input-outer">
+<input required placeholder="Address" name="shipAddress1" class="custom-input" isrequired="">
+</div>
+<div class="date-year-outer">
+<div class="input-outer">
+<input name="shipCity" type="TEXT" class="custom-input" placeholder="City" isrequired="">
+</div>
+<div class="input-outer">
+<input required placeholder="Postal Code" name="shipPostalCode" class="custom-input" isrequired="">
+</div>
+</div>
+<div class="date-year-outer">
+<div class="input-outer">
+<select name="shipCountry" isrequired="">
+<option></option>
+</select>
+</div>
+<div class="input-outer">
+<select name="shipState" isrequired="">
+<option></option>
+</select>
+</div>
+</div>
+<div class="remember-outer input-outer">
+<div class="custom-checkbox checkbox checkbox-color">
+<input type="checkbox" class="" id="singleCheckbox1" checked name="billShipSame" aria-label="Single checkbox Two">
+<label for="singleCheckbox1">Billing Address same as Shipping</label>
+</div>
+</div>
+
+<div class="kform_spacer coupon_code">
+	<input class="custom-input" name="couponCode" type="TEXT" placeholder="Coupon Code (Optional)">
+</div>
+<div class="billing-address-outer">
+<div class="input-outer">
+<input name="address1" type="TEXT" placeholder="Address" class="custom-input">
+</div>
+<div class="date-year-outer">
+<div class="input-outer">
+<input name="city" type="TEXT" placeholder="City" class="custom-input">
+</div>
+<div class="input-outer">
+<input required placeholder="Postal Code" name="postalCode" class="custom-input">
+</div>
+</div>
+<div class="date-year-outer">
+<div class="input-outer">
+<select name="country" defaulttext="country">
+</select>
+</div>
+<div class="input-outer">
+<select name="state">
+</select>
+</div>
+</div>
+</div>
+<div class="heading-one">
+<h2><strong>Step 2:</strong> Payment Information</h2>
+</div>
+<div class="payment-method-outer">
+<ul>
+<li><img src="images/payment-icon-1.png" alt=""></li>
+<li><img src="images/payment-icon-2.png" alt=""></li>
+<li><img src="images/payment-icon-3.png" alt=""></li>
+<li><img src="images/payment-icon-4.png" alt=""></li>
+<li><img src="images/payment-icon-5.png" alt=""></li>
+</ul>
+</div>
+<input type="hidden" name="paySource" value="CREDITCARD">
+<div class="input-outer">
+<input required placeholder="Card Number" name="cardNumber" maxlength="16" class="custom-input" isrequired="">
+</div>
+<div class="date-year-outer">
+<div class="input-outer">
+<select tabindex="1" name="cardMonth" isrequired="">
+<option value="01">1 - January</option>
+<option value="02">2 - February</option>
+<option value="03">3 - March</option>
+<option value="04">4 - April</option>
+<option value="05">5 - May</option>
+<option value="06">6 - June</option>
+<option value="07">7 - July</option>
+<option value="08">8 - August</option>
+<option value="09">9 - September</option>
+<option value="10">10 - October</option>
+<option value="11">11 - November</option>
+<option value="12">12 - December</option>
+</select>
+</div>
+<div class="input-outer">
+<select tabindex="1" name="cardYear" isrequired="">
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+</select>
+</div>
+</div>
+<div class="input-outer">
+<input required isrequired="" maxlength="4" placeholder="CVV (Security Code)" name="cardSecurityCode" class="custom-input">
+</div>
+<div class="price-outer">
+<h6>100% Satisfaction Guaranteed. Risk Free. Must Try..</h6>
+ 
+<div class="price-inner price-inner2" style="display:block">
+<h3><sup><span></span></sup><span id="orderPrice">49<sup><b>.00</b></sup></span></h3>
+<div class="cut-price"><span class="tot-amt">Total Amount</span> <div class="kcartTotals"><span class="kcartGrandTotal">49.00</span> </div></div>
+<div id="orderCoupons">
+            <!--Applied coupons show here.-->
+            </div>
+</div>
+</div>
+
+<div class="submit-ourder-btn"> 
+<input type="button" value="SUBMIT YOUR ORDER" class="kform_submitBtn submit-btn" id="kformSubmit">
+
+        <img src="images/paypal.png" id="kform_payPalButton" style="width:150px">
+        <br>
+        				
+</div> 
+</form>
+</div>
+</div>
+</section>
+
+<div class="nitro-result bottom-result">
+<div class="product-feed">
+	<img src="images/nitrocut-3.jpg" alt="">
+</div>
+<div class="product-feed">
+	<img src="images/nitrocut-add5.jpg" alt="">
+</div>
+</div>
+
+<footer class="footer">
+<div class="right-footer">
+<p>&copy; 2016 NITROCUT - All rights reserved.</p>
+<ul>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Refund Policy</a></li>
+</ul>
+</div>
+</footer>
+</div>
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" defer>
+<link href="css/jquery.selectbox.css" type="text/css" rel="stylesheet" defer>
+<link href="css/build.css" rel="stylesheet" type="text/css" defer>
+<link href="css/style.css" rel="stylesheet" type="text/css" defer>
+<link href="css/responsive.css" rel="stylesheet" type="text/css" defer>
+<link href="css/css.css" rel="stylesheet" defer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.selectbox-0.2.js"></script>
+<script>$(function(){$(".select_box").selectbox();$(".select_new").selectbox();$(".select_new1").selectbox();$(".select_new2").selectbox();});</script>
+<script>$(document).ready(function(){$("#singleCheckbox1").click(function(){if(document.getElementById("singleCheckbox1").checked){$(".billing-address-outer").hide();}else{$(".billing-address-outer").show();}})
+$('html').click(function(evt){var clickEle=$(evt.target).attr('class');if(clickEle=='sbSelector sbFocus'){var t=$(evt.target).attr('id');jQuery('.sbSelector').next().css('display','none');jQuery('#'+t).next().css('display','block');}else{jQuery('.sbSelector').prev().removeClass('sbToggleOpen');jQuery('.sbSelector').next().css('display','none');}});})</script>
+
+ 
+<script>
+$(document).ready(function(){
+	/***
+	* Make Changes in Price
+	*/
+	$("body").on("click",".PriceCheckbox",function(){
+		var me = $(this);
+		var index = $(".PriceCheckbox").index(me);
+		$(".PriceCheckbox").prop("checked",false);
+		$(".PriceCheckbox").eq(index).prop("checked",true);
+		var Price = $(".PriceCheckbox").eq(index).val();
+		if(Price==39){
+		HTML = "39<sup><b>.99</b></sup>";
+		}
+		else if(Price==49.00){
+		HTML = "49<sup><b>.00</b></sup>";
+		}
+		else if(Price==135){
+		HTML = "135<sup><b>.00</b></sup>";
+		}else{
+		HTML = "198<sup><b>.00</b></sup>";
+		}
+		
+		$("#orderPrice").html(HTML);
+
+		});
+	
+		
+			$(".right-plan-price-outer small i, .cansel-anytime-text").mouseenter(function(){
+						$(".cansel-anytime-text").show();
+					});		
+					
+					$(".right-plan-price-outer small i, .cansel-anytime-text").mouseleave(function(){
+						$(".cansel-anytime-text").hide();
+					});	
+		});
+</script>
+<!--  -->
+<script type="text/javascript" id="pap_x2s6df8d" src="jdw4yz"></script>
+<script type="text/javascript">
+PostAffTracker.setAccountId('default1');
+try {
+PostAffTracker.track();
+} catch (err) { }
+</script>
+<!--  -->
+<style>
+.price-inner1, .price-inner2{display:none;}
+</style>
+
+</body>
+</html>
